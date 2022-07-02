@@ -33,5 +33,8 @@ describe Solver do
     it 'returns the reverse of the word' do
       expect(@solver.reverse('hello')).to eq('olleh')
     end
+    it 'reverse returns a string' do
+        expect(@solver.reverse('hello')).to be_a(String)
+    end
   end
 end
