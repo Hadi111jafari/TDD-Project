@@ -34,13 +34,12 @@ describe Solver do
       expect(@solver.reverse('hello')).to eq('olleh')
     end
     it 'reverse returns a string' do
-        expect(@solver.reverse('hello')).to be_a(String)
+      expect(@solver.reverse('hello')).to be_a(String)
     end
   end
   describe '#fizzbuzz' do
-
     it 'fizzbuzz returns a string' do
-        expect(@solver.fizzbuzz(5)).to be_a(String)
+      expect(@solver.fizzbuzz(5)).to be_a(String)
     end
     it 'returns "fizz" for multiples of 3' do
       expect(@solver.fizzbuzz(3)).to eq('fizz')
