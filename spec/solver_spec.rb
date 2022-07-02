@@ -29,4 +29,9 @@ describe Solver do
       expect(@solver.factorial('a')).to eq('undefined')
     end
   end
+  describe '#reverse words' do
+    it 'returns the reverse of the word' do
+      expect(@solver.reverse('hello')).to eq('olleh')
+    end
+  end
 end
